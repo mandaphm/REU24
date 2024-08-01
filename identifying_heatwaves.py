@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 #Isolating the Max Daily Temperatures
 
 lat = 63.5
-lon = 143.625
+lon = -145.625
 summer_months = [6, 7, 8]
 month_names = ['June', 'July', 'August']
 
