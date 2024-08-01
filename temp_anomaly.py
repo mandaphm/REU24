@@ -63,13 +63,3 @@ df_heatwave['temperature_anomaly'] = df_heatwave['T2M'] - df_heatwave['T2M_media
 # Convert back to datetime for plotting
 df_heatwave['datetime'] = df_heatwave['time']
 df_heatwave.to_csv(output_csv_path, index=False)
-
-# Plot the temperature anomaly for the heatwave period
-plt.figure(figsize=(15, 7))
-plt.plot(df_heatwave['datetime'], df_heatwave['temperature_anomaly'], label='Temperature Anomaly')
-plt.title('Temperature Anomaly at 63.5°N, 145.625°W (2004-06-16 to 2004-06-30)')
-plt.xlabel('Date and Time')
-plt.ylabel('Temperature Anomaly (K)')
-plt.legend()
-plt.grid(True)
-plt.show()
