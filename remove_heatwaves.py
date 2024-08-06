@@ -104,5 +104,5 @@ for var in variables:
             data_location[var].loc[{'time': time_slice}] = replacement_data.values
 
     data.loc[{'lat': lat, 'lon': lon}] = data_location
-    output_filename = f'/Users/manda/REU24/climate_data/MERRA2/{var}/MERRA2_{var}_end_sum_2004.nc'
+    output_filename = f'/Users/manda/REU24/climate_data/MERRA2/{var}/MERRA2_{var}_no_heatwave.nc'
     data.to_netcdf(output_filename)
